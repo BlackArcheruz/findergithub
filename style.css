@@ -1,0 +1,32 @@
+.bg-white{
+    opacity: 0.5;
+}
+.navbar-brand{
+    animation-name: brand-animation;
+    animation-duration: 1s;
+    transition: ease .3s color;
+}
+@keyframes brand-animation{
+    0%{transform: scale(3);}
+    100%{transform: scale(1);}
+}
+.search{
+    animation-name: search-animation;
+    animation-duration: 1s;
+}
+@keyframes search-animation{
+    0%{transform: translate(20em,0);}
+    100%{transform: translate();}
+}
+footer{
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+@keyframes fadein{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.fadein{
+    animation-name: fadein;
+    animation-duration: 0.5s;
+}

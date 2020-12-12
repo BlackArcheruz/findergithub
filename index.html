@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://avatars1.githubusercontent.com/oa/1432122?s=140&u=f88617a89717afae5689c9ec3c6181c34906aef6&v=4" type="image/x-icon">
+    <title>Github Finder</title>
+</head>
+<body>
+    <nav class="navbar mb-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">GitHub Finder</a>
+        </div>
+    </nav>
+    <hr class="bg-white">
+    <div class="container searchContainer">
+        <div class="search card card-body">
+            <h1>Search GitHub Users</h1>
+            <p class="lead">Enter a username to fetch a user profile and repos</p>
+            <input type="text" id="searchUser" class="form-control" placeholder="🔎 GitHub Username...">
+        </div>
+    </div>
+    <br>
+    <div id="profile"></div>
+    <footer class="mt-5 p-3 text-center">GitHub Finder &copy; <span id="year"></span></footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+      </script>
+</body>
+</html>
